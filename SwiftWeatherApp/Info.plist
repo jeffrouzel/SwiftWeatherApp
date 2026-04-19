@@ -23,5 +23,7 @@
 	</dict>
 	<key>API_KEY</key>
 	<string>2bc0e66cc9b71140a6015279fd8dab99</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs location access to show your position on the map.</string>
 </dict>
 </plist>
