@@ -25,8 +25,8 @@ class WeatherDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = ("\(cityName_passed) Weather Details")
-        bindViewModel()
         weatherViewModel.fetchWeather(city: cityName_passed)
+        bindViewModel()
     }
     
     // MARK: Data Binding

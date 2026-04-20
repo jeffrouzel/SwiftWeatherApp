@@ -22,7 +22,7 @@ class WeatherlistViewModel {
     }
 
     func addCity(_ city: String) {
-        let trimmed = city.trimmingCharacters(in: .whitespaces)
+        let trimmed = city.trimmingCharacters(in: .whitespaces) // remove any whitespace
         guard !trimmed.isEmpty, !cities.contains(trimmed) else { return }   // do not add duplicates
         cities.append(trimmed)
         saveUserCities()

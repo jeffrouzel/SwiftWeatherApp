@@ -34,10 +34,9 @@ class HomeViewController: UIViewController{
         title = "Current Weather"
         mapView.showsUserLocation = true
         locationManager.delegate = self
-        bindViewModel()
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
+        bindViewModel()
     }
     
     // This is needed for the navigationToolbar to appear

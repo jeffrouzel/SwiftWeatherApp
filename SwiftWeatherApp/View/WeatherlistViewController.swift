@@ -22,9 +22,14 @@ class WeatherListViewController: UIViewController {
         tableView_cities.dataSource = self
         tableView_cities.delegate = self
         searchBar.delegate = self
-
         viewModel.loadCities()
-
+        bindViewModel()
+        
+        
+    }
+    
+    // MARK: Data Binding
+    private func bindViewModel() {
         viewModel.onCitiesUpdated = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView_cities.reloadData()
